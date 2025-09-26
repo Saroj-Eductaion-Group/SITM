@@ -20,6 +20,7 @@ import NotFoundPage from "./pages/notFoundPage/NotFoundPage";
 import EligibilityCriteria from "./pages/admission/eligibility";
 import FeeStructure from "./pages/admission/FeeStructure";
 import Chatbot from "./components/ChatBot";
+import EventPage from "./pages/academics/EventsPage";
 
 
 
@@ -44,6 +45,7 @@ export default function App() {
         {/* Academics  */}
         <Route path="/courses-offered" element={<CoursesOffered />} />
         <Route path="/departments" element={<DepartmentPage />} />
+        <Route path="/events" element={<EventPage />} />
         <Route path="/central-library" element={<CentralLibraryPage />} />
 
         {/* R & D  */}
