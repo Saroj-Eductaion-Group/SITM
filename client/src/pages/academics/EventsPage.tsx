@@ -6,7 +6,6 @@ import Img4 from '../../assets/images/events/eventImg4.jpeg';
 import Img5 from '../../assets/images/events/eventImg5.jpeg';
 import Img6 from '../../assets/images/events/eventImg6.jpeg';
 import Img7 from '../../assets/images/events/eventImg7.jpeg';
-import Img8 from '../../assets/images/events/eventImg8.jpeg';
 import Img9 from '../../assets/images/events/eventImg9.jpeg';
 import Img10 from '../../assets/images/events/eventImg10.jpeg';
 
@@ -28,7 +27,6 @@ const eventImages: GalleryImage[] = [
   { id: 5, src: Img5, alt: 'Group photo of the event team' },
   { id: 6, src: Img6, alt: 'A candid shot of the audience' },
   { id: 7, src: Img7, alt: 'A candid shot of the audience' },
-  { id: 8, src: Img8, alt: 'A candid shot of the audience' },
   { id: 9, src: Img9, alt: 'A candid shot of the audience' },
   { id: 10, src: Img10, alt: 'A candid shot of the audience' },
 ];
@@ -80,10 +78,6 @@ const EventPage: React.FC = () => {
             ))}
           </div>
         </section>
-        
-        <p className="mt-12 text-center text-blue-700 font-medium">
-          *Thank you for making our event a success!*
-        </p>
 
       </main>
     </div>

@@ -236,7 +236,7 @@ const Header = () => {
           icon: <HiOutlineBuildingLibrary className="text-blue-500" />,
           desc: "Resources and facilities",
         },
-         {
+        {
           title: "Events & Gallery",
           to: "/events",
           icon: <HiOutlineBuildingLibrary className="text-blue-500" />,
