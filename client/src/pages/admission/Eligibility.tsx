@@ -13,6 +13,16 @@ const EligibilityCriteria = () => {
       ]
     },
     {
+      name: "B.Pharm Lateral Entry",
+      duration: "3 years (6 semesters)",
+      criteria: [
+        "Diploma in Pharmacy (D.Pharm) from a PCI approved institution",
+        "Minimum 50% marks (45% for SC/ST candidates) in D.Pharm",
+        "Registered with State Pharmacy Council",
+        "Direct admission based on merit or through state counseling"
+      ]
+    },
+    {
       name: "Diploma in Pharmacy (D.Pharm)",
       duration: "2 years (4 semesters)",
       criteria: [
@@ -23,46 +33,96 @@ const EligibilityCriteria = () => {
       ]
     },
     {
-      name: "Master of Pharmacy (M.Pharm)",
-      duration: "2 years (4 semesters)",
+      name: "Bachelor of Business Administration (BBA)",
+      duration: "3 years (6 semesters)",
       criteria: [
-        "Bachelor's degree in Pharmacy (B.Pharm) from a PCI approved institution",
-        "Minimum 55% marks (50% for SC/ST candidates) in B.Pharm",
-        "Qualified GPAT/UPSEE-PG or other relevant entrance examination",
-        "Specializations available: Pharmaceutics, Pharmacology, Pharmaceutical Chemistry, Pharmacognosy"
+        "Passed 10+2 examination in any stream from a recognized board",
+        "Minimum 50% marks (45% for SC/ST candidates)",
+        "Qualified in relevant entrance exam or merit-based admission",
+        "English as a compulsory subject in 10+2"
       ]
     },
     {
-      name: "Pharmacy Doctoral Program (Pharm.D)",
-      duration: "6 years (5 years study + 1 year internship)",
+      name: "Bachelor of Computer Applications (BCA)",
+      duration: "3 years (6 semesters)",
       criteria: [
-        "For entry after 10+2: Passed with Physics, Chemistry and Biology/Mathematics",
+        "Passed 10+2 examination in any stream from a recognized board",
         "Minimum 50% marks (45% for SC/ST candidates)",
-        "For lateral entry: D.Pharm holders with minimum 50% marks",
-        "Approved by Pharmacy Council of India (PCI)"
+        "Mathematics as a subject in 10+2 is preferred",
+        "Qualified in relevant entrance exam or merit-based admission"
+      ]
+    },
+    {
+      name: "Bachelor of Technology (B.Tech)",
+      duration: "4 years (8 semesters)",
+      criteria: [
+        "Passed 10+2 examination with Physics and Mathematics as compulsory subjects along with Chemistry/Biology/Biotechnology",
+        "Minimum 50% marks (45% for SC/ST candidates) in the above subjects combined",
+        "Qualified in JEE Main/UPSEE or other state/national level engineering entrance exams",
+        "Minimum age limit: 17 years as on 31st December of admission year"
+      ]
+    },
+    {
+      name: "B.Tech Lateral Entry",
+      duration: "3 years (6 semesters)",
+      criteria: [
+        "Diploma in Engineering/Technology in relevant branch",
+        "Minimum 50% marks (45% for SC/ST candidates) in diploma",
+        "B.Sc. graduates with Mathematics as a subject at 10+2 level",
+        "Admission through lateral entry test or merit-based"
+      ]
+    },
+    {
+      name: "Master of Technology (M.Tech)",
+      duration: "2 years (4 semesters)",
+      criteria: [
+        "Bachelor's degree in Engineering/Technology (B.Tech/B.E.) in relevant discipline",
+        "Minimum 55% marks (50% for SC/ST candidates) in qualifying degree",
+        "Qualified GATE/UPSEE-PG or other relevant entrance examination",
+        "Specializations available: Computer Science, Mechanical, Civil, Electronics, etc."
+      ]
+    },
+    {
+      name: "Master of Business Administration (MBA)",
+      duration: "2 years (4 semesters)",
+      criteria: [
+        "Bachelor's degree in any discipline from a recognized university",
+        "Minimum 50% marks (45% for SC/ST candidates) in graduation",
+        "Qualified CAT/MAT/UPSEE-MBA or other relevant management entrance tests",
+        "Specializations available: Marketing, Finance, HR, Operations, IT"
+      ]
+    },
+    {
+      name: "Master of Computer Applications (MCA)",
+      duration: "2 years (4 semesters)",
+      criteria: [
+        "Bachelor's degree in any discipline with Mathematics at 10+2 or graduation level",
+        "Minimum 50% marks (45% for SC/ST candidates) in graduation",
+        "Qualified in NIMCET/UPSEE-MCA or other relevant entrance examinations",
+        "BCA graduates are given preference"
       ]
     }
   ];
 
   const importantNotes = [
-    "All admissions are subject to approval by Pharmacy Council of India (PCI)",
-    "Relaxation in marks for reserved categories as per Government of Uttar Pradesh norms",
-    "Foreign/NRI candidates must have equivalent qualifications approved by AIU",
-    "Documents required: 10th & 12th mark sheets, transfer certificate, migration certificate, character certificate, category certificate (if applicable), entrance exam scorecard"
+ 
+    "Documents required: 10th & 12th mark sheets, graduation marksheets (for PG courses), transfer certificate, migration certificate, character certificate, category certificate (if applicable), entrance exam scorecard",
+    "Lateral entry admissions are available for eligible diploma holders in respective fields",
+    "Management quota seats available as per government regulations",
   ];
 
   return (
     <div className="min-h-screen bg-gray-50 py-36 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Lucknow Institute of Pharmacy
+            Saroj Institute of Technology and Management
           </h1>
           <h2 className="mt-3 text-2xl font-semibold text-blue-600">
             Eligibility Criteria
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Admission requirements for our pharmacy programs
+            Admission requirements for all our programs
           </p>
         </div>
 
