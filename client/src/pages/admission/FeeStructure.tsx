@@ -44,7 +44,7 @@ const FeeStructure = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="mt-18 min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 py-12 px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl max-w-6xl w-full">
                 <div className="p-8">
                     <div className="text-center mb-8">
@@ -60,7 +60,7 @@ const FeeStructure = () => {
 
                      
                         {/* Left Column - Quick Overview */}
-                        <div className=" space-y-6">
+                        <div className="space-y-6">
                             <div className="text-center">
                                 <h3 className="text-xl font-bold text-gray-900 mb-4">Quick Overview</h3>
                             </div>
