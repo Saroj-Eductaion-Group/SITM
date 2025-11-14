@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FiChevronDown, FiChevronUp, FiUsers, FiLayers, FiTool, FiDroplet } from 'react-icons/fi';
 
 type ResearchProject = {
@@ -13,6 +14,7 @@ type ResearchProject = {
 };
 
 const RDPage: React.FC = () => {
+  const navigate = useNavigate();
   const [projects, setProjects] = useState<ResearchProject[]>([
     {
       id: 1,
@@ -65,6 +67,11 @@ const RDPage: React.FC = () => {
         ? { ...project, expanded: !project.expanded } 
         : project
     ));
+  };
+
+  // Contact Us button handler
+  const handleContactUs = () => {
+    navigate('/contact-us');
   };
 
   return (
@@ -171,13 +178,18 @@ const RDPage: React.FC = () => {
           </div>
         </div>
 
-        {/* Call to Action */}
+        {/* Call to Action with Contact Us Button */}
         <div className="mt-16 text-center bg-blue-50 rounded-xl p-8">
           <h3 className="text-2xl font-bold text-gray-800 mb-4">Interested in Research Collaboration?</h3>
           <p className="text-gray-700 max-w-2xl mx-auto mb-6">
             We welcome partnerships with industry and academic institutions for innovative research projects.
           </p>
-          
+          <button 
+            onClick={handleContactUs}
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+          >
+            Contact Us
+          </button>
         </div>
       </div>
     </div>
