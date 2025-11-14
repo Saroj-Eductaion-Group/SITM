@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const CoursesOffered: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'undergraduate' | 'postgraduate' | 'diploma'>('undergraduate');
+  const navigate = useNavigate();
+
+  // Contact Us button handler
+  const handleContactUs = () => {
+    navigate('/contact-us');
+  };
 
   const courseData = {
     undergraduate: [
@@ -158,7 +165,10 @@ const CoursesOffered: React.FC = () => {
       {/* Footer */}
       <div className="mt-16 text-center bg-gray-50 rounded-lg p-6">
         <p className="text-gray-600 mb-4">For more information, please contact the admissions office.</p>
-        <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+        <button 
+          onClick={handleContactUs}
+          className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        >
           Contact Us
         </button>
       </div>
