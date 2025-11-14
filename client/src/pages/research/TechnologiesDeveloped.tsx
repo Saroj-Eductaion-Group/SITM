@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 type Technology = {
   id: number;
@@ -10,6 +11,7 @@ type Technology = {
 };
 
 const TechnologiesPage: React.FC = () => {
+  const navigate = useNavigate();
   const technologies : Technology[] = [
     {
       id: 1,
@@ -74,6 +76,11 @@ const TechnologiesPage: React.FC = () => {
   const filteredTech = technologies.filter(tech =>
     filter === 'all' || tech.status === filter
   );
+
+  // Contact Us button handler
+  const handleContactUs = () => {
+    navigate('/contact-us');
+  };
 
   return (
     <div className="min-h-screen py-24 bg-gray-50">
@@ -160,7 +167,10 @@ const TechnologiesPage: React.FC = () => {
           <p className="text-gray-700 max-w-2xl mx-auto mb-6">
             We welcome industry partners for technology transfer and collaborative development.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+          <button 
+            onClick={handleContactUs}
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+          >
             Contact Technology Transfer Office
           </button>
         </div>
