@@ -8,6 +8,13 @@ import Img6 from '../../assets/images/events/eventImg6.jpeg';
 import Img7 from '../../assets/images/events/eventImg7.jpeg';
 import Img9 from '../../assets/images/events/eventImg9.jpeg';
 import Img10 from '../../assets/images/events/eventImg10.jpeg';
+import Img11 from '../../assets/images/events/eventImg11.jpeg';
+import Img12 from '../../assets/images/events/eventImg12.jpeg';
+import Img13 from '../../assets/images/events/eventImg13.jpeg';
+import Img14 from '../../assets/images/events/eventImg14.jpeg';
+import Img15 from '../../assets/images/events/eventImg15.jpeg';
+import Img16 from '../../assets/images/events/eventImg16.jpeg';
+import Img17 from '../../assets/images/events/eventImg17.jpeg';
 
 /**
  * Defines the structure for an image object.
@@ -20,6 +27,13 @@ interface GalleryImage {
 
 // 1. Define the image data for the gallery
 const eventImages: GalleryImage[] = [
+  { id: 11, src: Img11, alt: 'Award Distribution Ceremony'},
+  { id: 12, src: Img12, alt: 'Award Distribution Ceremony'},
+  { id: 13, src: Img13, alt: 'Award Distribution Ceremony'},
+  { id: 14, src: Img14, alt: 'Award Distribution Ceremony'},
+  { id: 15, src: Img15, alt: 'Award Distribution Ceremony'},
+  { id: 16, src: Img16, alt: 'Award Distribution Ceremony'},
+  { id: 17, src: Img17, alt: 'Award Distribution Ceremony'},
   { id: 1, src: Img1, alt: 'A view of the event venue' },
   { id: 2, src: Img2, alt: 'Attendees networking and discussing' },
   { id: 3, src: Img3, alt: 'The main speaker on stage' },
