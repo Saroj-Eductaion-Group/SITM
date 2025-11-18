@@ -239,12 +239,7 @@ function PlacementPage() {
               >
                 Apply Now <ArrowRight className="h-4 w-4 md:h-5 md:w-5 ml-2" />
               </a>
-              <a
-                href="/contact"
-                className="bg-transparent border-2 border-white text-white font-semibold px-6 py-3 md:px-8 md:py-4 rounded-lg hover:bg-white/10 transition-all duration-300 flex items-center justify-center"
-              >
-                Contact Us <ArrowRight className="h-4 w-4 md:h-5 md:w-5 ml-2" />
-              </a>
+              
             </div>
           </div>
         </motion.section>

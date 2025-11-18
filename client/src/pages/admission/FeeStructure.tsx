@@ -1,7 +1,7 @@
 // src/components/FeeStructure.tsx
 import { useState, useEffect } from 'react';
 
-const pdfPath = "/pdfs/SITM-2025-26.pdf";
+const pdfPath = "/sitm/pdfs/SITM-2025-26.pdf";
 
 const FeeStructure = () => {
     const [isHovered, setIsHovered] = useState(false);
